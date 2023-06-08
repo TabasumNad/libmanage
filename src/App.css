@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.list-group a:hover {
+  background-color: blue;
   color: white;
+  cursor: pointer;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .bckg{
+    /* background-image: linear-gradient(to right top, #a879b1, #926fa9, #7c65a0, #655c96, #4d538c, #3e5a93, #2a6199, #00689d, #0081af, #009abb, #00b2bf, #12cabe); */
+    background-image: linear-gradient(to left bottom, #a879b1, #9674ae, #846fab, #716aa6, #5c65a1, #52629e, #485e9b, #3c5b98, #3a5998, #395797, #375497, #365296);
+    /* background-image: linear-gradient(to right top, #903a6b, #823d74, #72417b, #5f4580, #4b4881, #3d548d, #295f96, #006a9d, #0083af, #009bba, #00b3bf, #12cabe); */
+  }
+  
+  .bgnv{
+    background-image: linear-gradient(to right bottom, #a879b1, #9674ae, #846fab, #716aa6, #5c65a1, #52629e, #485e9b, #3c5b98, #3a5998, #395797, #375497, #365296);
+    /* background-image: linear-gradient(to right top, #3f122b, #401837, #3e2043, #39274e, #322f58, #2d3e6a, #204d7a, #005c89, #0077a0, #0093b1, #00afba, #12cabe); */
+  }
+  
+  .bgnc{
+    width: 230px;
+    background-image: linear-gradient(to right top, #6e3253, #69395f, #61406a, #584772, #4e4e78, #475a86, #3c6692, #2d729b, #0088ad, #009eb9, #00b5bf, #12cabe);
+  }
+  .bgbar{
+    /* background-image: linear-gradient(to right top, #985077, #7b456f, #5e3a63, #433056, #292546, #222d4f, #163558, #003d5e, #005e80, #00819c, #00a5b1, #12cabe); */
+    background-image: linear-gradient(to right top, #452c39, #4a2e43, #4b3250, #49375d, #423d6b, #3b4b7d, #2b598e, #00689d, #0081af, #009abb, #00b2bf, #12cabe);
+  color: white;
+  }
+  
+  .crud {
+    height: 80vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  table td {
+   border: solid black 1px;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(142, 154, 165);
+    text-align: center;
+    color: black;
+  }
+  
+  table td button {
+    padding: 5px 10px;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+  table td button.edit {
+    border: 1px solid green;
+    background-color: rgb(7, 168, 7);
+    color: white;
+  }
+  table td button.edit:hover {
+    background-color: rgb(3, 71, 3);
+  }
+  table td button.delete {
+    border: 1px solid rgb(209, 110, 110);
+    background-color: rgb(211, 103, 103);
+    color: white;
+  }
+  table td button.delete:hover {
+    background-color: rgb(92, 5, 5);
+  }
+  
+  
+  .addForm {
+    margin-bottom: 30px;
+  }
+  .addForm input {
+    background-color: #173738;
+    width: 180px;
+    height: 30px;
+  }
+  .addForm button {
+    width: 135px;
+    color: white;
+    height: 35px;
+    background-color: rgb(35, 106, 35);
+  }
+  .addForm button:hover {
+    background-color: rgb(5, 86, 5);
+  }
+  /* .App{
+  background-color: rgb(231, 215, 215);
+}
+.conatiner{
+  background-color: rgb(231, 215, 215);
+} */
+.para{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.paragraph{
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.head1{
+  width: 10px;
+}
+.heademail{
+  width: 50px;
+}
+.backg{
+  background-color: #716aa6;
 }
 
-.App-link {
-  color: #61dafb;
+.moto{
+  padding-top: 30px;
+  margin-left: 22%;
+}
+.login{
+  color: rgb(25, 15, 35);
+  font-weight: 500;
+  margin-left: 2%;
+  margin-top: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.design{
+  width:100%;
+  height:100vh;
+  background-color: #009abb;
+}
+.adjust{
+ margin-top: 0%;
+ margin-left: 2%;
+ padding-left: 30px;
+ padding: 10px;
+ background-color: #253132;
+ border-radius: 10px;
+}
+.adjust2{
+  margin-left: 2%;
+padding: 10px;
+padding-left: 22px;
+background-color: #253132;
+border-radius: 10px;
+}
+.adjust3{
+  margin-left: 2%;
+  border-radius: 10px;
+  background-color: #0a6d70;
 }
